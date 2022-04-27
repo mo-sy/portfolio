@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Page | Portfolio</title>
+    <link rel="stylesheet" href="src/css/style.css" />
+    <link rel="stylesheet" href="src/css/responsive.css" />
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+    <!-- FontAwesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="project-page">
+    <!-- Splash Screen -->
+    <div class="splash-screen">
+      <div class="splash-item">
+        <h1 class="splash-title">Happy Bakery</h1>
+        <div class="box"></div>
+      </div>
+    </div>
+
+    <div class="body-main__container">
+      <nav class="main-nav">
+        <div class="nav__header">
+          <ul>
+            <li class="nav-item">
+              <a class="nav-link" href="main.html#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="main.html#project">Project</a>
+            </li>
+          </ul>
+          <button aria-label="close" class="btn--close-nav">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+        <div class="links">
+          <div class="email-wrap">
+            <i class="fa-solid fa-copy btn--copy">
+              <span class="copy-bubble">이메일 주소 복사하기!</span>
+            </i>
+            <p class="email-address">seungyeon533@gmail.com</p>
+          </div>
+          <div class="link-wrap">
+            <i class="fa-brands fa-github"></i>
+            <a href="https://github.com/mo-sy" target="_blank"
+              >https://github.com/mo-sy</a
+            >
+          </div>
+          <div class="link-wrap">
+            <i class="fa-brands fa-blogger-b"></i>
+            <a href="https://blog.naver.com/sy-9000" target="_blank"
+              >https://blog.naver.com/sy-9000</a
+            >
+          </div>
+        </div>
+      </nav>
+      <header class="main-header">
+        <h1 class="main-logo"><a href="index.html">HOME</a></h1>
+        <div class="main-menu-wrap">
+          <button>MENU</button>
+          <div class="button-circle"></div>
+        </div>
+      </header>
+      <main class="proj-main">
+        <header class="proj-main__header">
+          <button class="btn--back" onclick="location.href='main.html'">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <h2 class="section-title project-title">
+            <span>Happy</span>
+            <span>Bakery</span>
+          </h2>
+        </header>
+
+        <section class="proj-page-section__video section">
+          <h2 class="section-title sr-only">Happy Bakery 미리보기</h2>
+
+          <div class="project-contents-wrap">
+            <span class="top-line">
+              <span class="dots">
+                <span class="top-line__item-dot"></span>
+                <span class="top-line__item-dot"></span>
+                <span class="top-line__item-dot"></span>
+              </span>
+            </span>
+            <div class="container vid-container">
+              <div class="preview-video">
+                <iframe
+                  src="https://www.youtube.com/embed/bG7Qqcfc0Ps?&amp;autoplay=1&mute=1&amp;loop=1;"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+            <div class="project-description">
+              <div class="proj-description__row">
+                <div class="proj-description__wrap">
+                  <h4>Demo</h4>
+                  <ul>
+                    <li class="demo-link-list">
+                      <a
+                        target="_blank"
+                        class="project-demo-link"
+                        href="https://mo-sy.github.io/happy-bakery/"
+                      >
+                        https://mo-sy.github.io/happy-bakery/
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="proj-description__wrap">
+                  <h4>Tools</h4>
+                  <p>Visual studio code</p>
+                </div>
+                <div class="proj-description__wrap">
+                  <h4>Framework</h4>
+                  <p>Bootstrap</p>
+                </div>
+              </div>
+              <div class="proj-description__wrap">
+                <h4>작업코드 기술</h4>
+                <span class="tool-icon">
+                  <img src="./src/img/icon/notion.png" alt="notion" />
+                </span>
+                <a
+                  target="_blank"
+                  class="project-demo-link"
+                  href="https://mire-ant-95d.notion.site/Happy-Bakery-4bbe8c89f4504b0c8f510922c37446cd"
+                  >Notion Link</a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section section--proj-mobile">
+          <h2 class="sr-only">프로젝트 모바일 화면영상</h2>
+          <div class="project-contents-wrap">
+            <div class="video-wrap">
+              <div class="preview-video">
+                <video controls>
+                  <source
+                    src="src/video/mobile-happy-bakery.mov"
+                    type="video/mp4"
+                  />
+                  Sorry, your browser doesn't support embedded videos.
+                </video>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section section-page-move">
+          <h2 class="sr-only">프로젝트 페이지 이동</h2>
+          <div class="project-contents-wrap">
+            <div class="page-move-contents proj-last-page">
+              <div class="previous">
+                <p>이전 프로젝트</p>
+                <i class="fa-solid fa-chevron-left"></i>
+                <a class="project-page-name" href="work-dalgona.html"
+                  >Dalgona Talk</a
+                >
+              </div>
+              <div class="next">
+                <p>다음 프로젝트</p>
+                <a class="project-page-name" href="work-dalgona.html"
+                  >Dalgona Talk</a
+                >
+                <i class="fa-solid fa-chevron-right"></i>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="section footer">
+        <div class="project-contents-wrap">
+          <small>&copy; Seungyeon Portfolio 2022</small>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Script -->
+    <script src="./src/js/nav.js"></script>
+    <script src="./src/js/copy.js"></script>
+  </body>
+</html>

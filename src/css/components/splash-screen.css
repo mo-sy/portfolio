@@ -1,0 +1,46 @@
+.splash-screen {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999;
+  animation: toBottom 1.2s forwards ease;
+  animation-delay: 2s;
+}
+
+.splash-item {
+  position: relative;
+}
+
+.splash-title {
+  text-align: center;
+  color: var(--yellow);
+  animation: diveText 0.2s ease forwards;
+  animation-delay: 1.2s;
+  font-family: "Permanent Marker", cursive;
+}
+
+.box {
+  position: relative;
+  width: 600px;
+  height: 100px;
+  background-color: var(--blue);
+  top: 20px;
+}
+
+@keyframes diveText {
+  to {
+    transform: translateY(60px);
+  }
+}
+
+@keyframes toBottom {
+  to {
+    bottom: -100%;
+  }
+}

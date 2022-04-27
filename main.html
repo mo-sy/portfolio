@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Main | Portfolio</title>
+    <link rel="stylesheet" href="src/css/style.css" />
+    <link rel="stylesheet" href="src/css/responsive.css" />
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+    <!-- FontAwesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Splash Screen -->
+    <div class="splash-screen">
+      <div class="splash-item">
+        <h1 class="splash-title">I Will Dive Into You!</h1>
+        <div class="box"></div>
+      </div>
+    </div>
+
+    <div class="body-main__container">
+      <!-- Skip Navigation -->
+      <div id="skip-nav">
+        <a href="#about">About 바로가기</a>
+        <a href="#project">Project 바로가기</a>
+      </div>
+
+      <nav class="main-nav">
+        <div class="nav__header">
+          <ul>
+            <li class="nav-item">
+              <a class="nav-link" href="main.html#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="main.html#project">Project</a>
+            </li>
+          </ul>
+          <button aria-label="close" class="btn--close-nav">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+        <div class="links">
+          <div class="email-wrap">
+            <i class="fa-solid fa-copy btn--copy">
+              <span class="copy-bubble">이메일 주소 복사하기!</span>
+            </i>
+            <p class="email-address">seungyeon533@gmail.com</p>
+          </div>
+          <div class="link-wrap">
+            <i class="fa-brands fa-github"></i>
+            <a href="https://github.com/mo-sy" target="_blank"
+              >https://github.com/mo-sy</a
+            >
+          </div>
+          <div class="link-wrap">
+            <i class="fa-brands fa-blogger-b"></i>
+            <a href="https://blog.naver.com/sy-9000" target="_blank"
+              >https://blog.naver.com/sy-9000</a
+            >
+          </div>
+        </div>
+      </nav>
+      <header class="main-header">
+        <h1 class="main-logo"><a href="index.html">HOME</a></h1>
+        <div class="main-menu-wrap">
+          <button>MENU</button>
+          <div class="button-circle"></div>
+        </div>
+      </header>
+      <main>
+        <section id="about" class="section-about section">
+          <h2 class="section-title fill-text-title-about">About,</h2>
+          <span class="section-title-sub">
+            다음을 생각하며 현재에 집중하고, 매일을 기록하며 나아갑니다.
+          </span>
+          <div class="contents-about">
+            <div class="about-contents-wrap">
+              <div class="about-text">
+                <div class="about-text-list-wrap">
+                  <ul class="about-description">
+                    <li>
+                      웹 표준을 준수하는 것을 중요하게 생각하여 HTML을
+                      작성합니다.
+                    </li>
+                    <li>
+                      HTML5의 시맨틱 태그를 적극 활용하여 웹 브라우저와
+                      검색엔진이 쉽게 이해할 수 있도록, 코드의 가독성과 유지
+                      보수가 쉬워질 수 있도록, 의미 있는 웹 구조를 만들기 위해
+                      노력합니다.
+                    </li>
+                    <li>
+                      모두를 위한 웹 접근성에 대하여 늘 고민하며 공부하고
+                      있습니다.
+                    </li>
+                  </ul>
+                </div>
+                <div class="about-text-list-wrap">
+                  <ul class="about-description">
+                    <li>CSS Property들의 특징을 이해하고 알맞게 사용합니다.</li>
+                    <li>
+                      다양한 디바이스 화면크기에 대응하는 반응형 웹을 구현할 수
+                      있습니다.
+                    </li>
+                    <li>
+                      flex와 grid를 사용하여 레이아웃을 조정할 수 있습니다.
+                    </li>
+                    <li>float의 특성에 대해서 이해하고 있습니다.</li>
+                    <li>
+                      Stacking Context(쌓임 맥락)를 고려하여 z-index를
+                      적용합니다.
+                    </li>
+                  </ul>
+                </div>
+                <div class="about-text-list-wrap">
+                  <ul class="about-description">
+                    <li>ECMAScript6에 대하여 공부하고 있습니다.</li>
+                    <li>DOM의 요소에 접근하고 조작할 수 있습니다.</li>
+                    <li>
+                      var, let, const를 통한 변수 선언 방식의 차이를 알고
+                      있습니다.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="about-links">
+              <div class="links">
+                <div class="email-wrap">
+                  <i class="fa-solid fa-copy btn--copy">
+                    <span class="copy-bubble">이메일 주소 복사하기!</span>
+                  </i>
+                  <p class="email-address">seungyeon533@gmail.com</p>
+                </div>
+                <div class="link-wrap">
+                  <i class="fa-brands fa-github"></i>
+                  <a href="https://github.com/mo-sy" target="_blank"
+                    >https://github.com/mo-sy</a
+                  >
+                </div>
+                <div class="link-wrap">
+                  <i class="fa-brands fa-blogger-b"></i>
+                  <a href="https://blog.naver.com/sy-9000" target="_blank"
+                    >https://blog.naver.com/sy-9000</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="project" class="section-project section">
+          <h2 class="section-title fill-text-title-project">Project</h2>
+          <div class="contents-project">
+            <ul class="project-list">
+              <li class="project-list__item">
+                <a class="project-name" href="work-caramel.html">
+                  <i class="fa-solid fa-angle-right"></i>
+                  Caramel <span class="md-block">Cinema</span>
+                </a>
+                <div class="project-desc">
+                  작업기간 : 2022.02.08 - 2022.03.01
+                </div>
+              </li>
+              <li class="project-list__item">
+                <a class="project-name" href="work-dalgona.html">
+                  <i class="fa-solid fa-angle-right"></i>
+                  Dalgona Talk
+                </a>
+                <div class="project-desc">
+                  작업기간 : 2022.02.14 - 2022.03.01
+                </div>
+              </li>
+              <li class="project-list__item">
+                <a class="project-name" href="work-happy-bakery.html">
+                  <i class="fa-solid fa-angle-right"></i>
+                  Happy Bakery
+                </a>
+                <div class="project-desc">
+                  작업기간 : 2022.01.31 - 2022.02.03
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <!-- Script -->
+    <script src="./src/js/nav.js"></script>
+    <script src="./src/js/copy.js"></script>
+  </body>
+</html>

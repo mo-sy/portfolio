@@ -1,0 +1,16 @@
+/* Medium ≥768px */
+@media screen and (max-width: 768px) {
+  /* Main Page */
+  .project-name {
+    font-size: 40px;
+  }
+
+  .md-block {
+    display: block;
+    margin-left: 40px;
+  }
+
+  .project-contents-wrap {
+    width: 100%;
+  }
+}

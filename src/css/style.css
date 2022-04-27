@@ -1,0 +1,58 @@
+/* Font */
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;700;900&family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap");
+
+@import url("./reset.css");
+
+/* Components */
+@import url("./components/variables.css");
+@import url("./components/animation-list.css");
+@import url("./components/splash-screen.css");
+@import url("./components/main-nav.css");
+@import url("./components/bubble.css");
+@import url("./components/skip-nav.css");
+
+/* Screen */
+@import url(./screen/welcome.css);
+@import url(./screen/main.css);
+@import url(./screen/work.css);
+
+html {
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: "Akira";
+  src: url(../font/Akira\ Expanded\ Demo.otf);
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  word-break: keep-all;
+  line-height: 1.6;
+}
+
+.sr-only {
+  position: absolute;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+}
+
+.hidden {
+  display: none;
+}
+
+.footer {
+  height: 100px;
+}
+
+.footer small {
+  text-align: center;
+  line-height: 100px;
+}

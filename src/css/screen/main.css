@@ -1,0 +1,190 @@
+.body-main__container {
+  background-color: var(--light-blue);
+  width: 100%;
+  position: relative;
+  color: #eee;
+  font-weight: 100;
+}
+
+.main-logo {
+  font-family: Akira, sans-serif;
+  color: var(--yellow);
+}
+
+.main-logo a {
+  font-size: 32px;
+}
+
+.main-header {
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-menu-wrap {
+  position: fixed;
+  display: inline-block;
+  top: 16px;
+  right: 40px;
+  z-index: 999;
+}
+
+.main-menu-wrap button {
+  color: var(--light-blue);
+  position: absolute;
+  z-index: 9999;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+}
+
+.button-circle {
+  cursor: pointer;
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  background-color: var(--yellow);
+  transition: all 0.3s;
+}
+
+.main-menu-wrap:hover .button-circle {
+  transform: scale(1.1);
+}
+
+/* Section title Style */
+.section-project .section-title {
+  -webkit-text-stroke: 1px var(--yellow);
+}
+
+.section-title {
+  font-family: Akira, sans-serif;
+  font-style: normal;
+  -webkit-text-stroke: 1px #eee;
+  font-size: 100px;
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.section-title-sub {
+  margin-left: 20px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.fill-text-title-about {
+  position: relative;
+}
+
+.fill-text-title-about {
+  color: #eee;
+  display: inline-block;
+}
+
+.fill-text-title-project {
+  color: var(--yellow);
+  text-align: left;
+}
+
+.fill-text-title-about::before {
+  transition: height 0.5s ease;
+  position: absolute;
+  overflow: hidden;
+  color: #fff;
+  left: 0;
+  top: 0;
+  animation: textFill 4s linear forwards;
+}
+
+.fill-text-title-about::before {
+  content: "ABOUT";
+  color: var(--light-blue);
+  animation-delay: 2.4s;
+}
+
+@keyframes textFill {
+  0% {
+    height: 100px;
+  }
+
+  100% {
+    height: 0;
+  }
+}
+
+.section {
+  padding: 0 40px;
+}
+
+.section-project {
+  padding-bottom: 98px;
+}
+
+/* about contents */
+.about-contents-wrap {
+  display: flex;
+}
+
+.about-text-list-wrap {
+  margin-bottom: 30px;
+}
+
+.about-text-list-wrap:last-child {
+  margin-bottom: 80px;
+}
+
+.about-text {
+  width: 53%;
+}
+
+.section-img-wrap {
+  width: 400px;
+  height: auto;
+}
+
+.section-img-wrap img {
+  width: 100%;
+}
+
+/* about 섹션내 이메일, 깃허브, 블로그 주소 */
+.about-links {
+  border-top: 1px solid #eee;
+  padding-top: 40px;
+}
+
+.about-links .links {
+  width: 300px;
+  margin-left: auto;
+}
+
+.about-links .links .email-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.about-links i {
+  margin-right: 8px;
+}
+
+.about-links .email-wrap,
+.about-links .link-wrap {
+  display: block;
+}
+
+/* Section Project */
+.project-list__item:not(.project-list__item:last-child) {
+  margin-bottom: 60px;
+}
+
+.project-name {
+  font-family: Akira, sans-serif;
+  font-size: 48px;
+  cursor: pointer;
+}
+
+.project-name:hover {
+  color: var(--yellow);
+  -webkit-text-stroke: 1px var(--yellow);
+}

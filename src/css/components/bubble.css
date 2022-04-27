@@ -1,0 +1,33 @@
+.fa-copy {
+  position: relative;
+  cursor: pointer;
+}
+
+.fa-copy:hover .copy-bubble {
+  display: block;
+}
+
+.copy-bubble {
+  font-family: "Noto Sans KR", sans-serif;
+  position: absolute;
+  width: 100px;
+  text-align: center;
+  top: -50px;
+  font-weight: 400;
+  background-color: #eee;
+  color: #000;
+  border-radius: 4px;
+  font-size: 12px;
+  padding: 4px;
+  transform: translateX(-50%);
+  display: none;
+}
+
+.copy-bubble::after {
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  content: "";
+  border-top: 15px solid #eee;
+  border-left: 15px solid transparent;
+}

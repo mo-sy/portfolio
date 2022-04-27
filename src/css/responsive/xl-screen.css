@@ -1,0 +1,44 @@
+/* Extra large	≥1030px */
+
+@media screen and (max-width: 1030px) {
+  /* Main Page */
+  .section-title-sub {
+    display: none;
+  }
+
+  .about-text {
+    width: 70%;
+  }
+
+  .about-links .email-wrap {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .about-links {
+    border-top: 1px solid #eee;
+    padding-top: 40px;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+
+  .section-title {
+    font-size: 60px;
+  }
+
+  /* Work Page */
+
+  .proj-description__row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .proj-description__row .proj-description__wrap:nth-child(2),
+  .proj-description__row .proj-description__wrap:nth-child(3) {
+    margin-left: 0;
+  }
+  .proj-description__row .proj-description__wrap:first-child {
+    margin-bottom: 20px;
+  }
+}

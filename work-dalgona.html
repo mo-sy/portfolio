@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Page | Portfolio</title>
+    <link rel="stylesheet" href="src/css/style.css" />
+    <link rel="stylesheet" href="src/css/responsive.css" />
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+    <!-- FontAwesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="project-page">
+    <!-- Splash Screen -->
+    <div class="splash-screen">
+      <div class="splash-item">
+        <h1 class="splash-title">Dalgona Talk</h1>
+        <div class="box"></div>
+      </div>
+    </div>
+
+    <div class="body-main__container">
+      <nav class="main-nav">
+        <div class="nav__header">
+          <ul>
+            <li class="nav-item">
+              <a class="nav-link" href="main.html#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="main.html#project">Project</a>
+            </li>
+          </ul>
+          <button aria-label="close" class="btn--close-nav">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+        <div class="links">
+          <div class="email-wrap">
+            <i class="fa-solid fa-copy btn--copy">
+              <span class="copy-bubble">이메일 주소 복사하기!</span>
+            </i>
+            <p class="email-address">seungyeon533@gmail.com</p>
+          </div>
+          <div class="link-wrap">
+            <i class="fa-brands fa-github"></i>
+            <a href="https://github.com/mo-sy" target="_blank"
+              >https://github.com/mo-sy</a
+            >
+          </div>
+          <div class="link-wrap">
+            <i class="fa-brands fa-blogger-b"></i>
+            <a href="https://blog.naver.com/sy-9000" target="_blank"
+              >https://blog.naver.com/sy-9000</a
+            >
+          </div>
+        </div>
+      </nav>
+      <header class="main-header">
+        <h1 class="main-logo"><a href="index.html">HOME</a></h1>
+        <div class="main-menu-wrap">
+          <button>MENU</button>
+          <div class="button-circle"></div>
+        </div>
+      </header>
+      <main class="proj-main">
+        <header class="proj-main__header">
+          <button class="btn--back" onclick="location.href='main.html'">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <h2 class="section-title project-title">
+            <span>Dalgona</span>
+            <span>Talk</span>
+          </h2>
+        </header>
+
+        <section class="proj-page-section__video section section--proj-mobile">
+          <h2 class="section-title sr-only">Dalgona Talk 모바일 화면 영상</h2>
+          <div class="project-contents-wrap">
+            <div class="video-wrap">
+              <div class="preview-video">
+                <video controls autoplay>
+                  <source src="src/video/dalgona.mov" type="video/mp4" />
+                  Sorry, your browser doesn't support embedded videos.
+                </video>
+              </div>
+            </div>
+            <div class="project-description">
+              <div class="proj-description__row">
+                <div class="proj-description__wrap">
+                  <h4>Demo</h4>
+                  <a
+                    class="project-demo-link"
+                    href="https://mo-sy.github.io/dalgona-talk"
+                    target="_blank"
+                  >
+                    https://mo-sy.github.io/dalgona-talk
+                  </a>
+                </div>
+                <div class="proj-description__wrap">
+                  <h4>Tools</h4>
+                  <p>Visual studio code, Figma</p>
+                </div>
+              </div>
+              <div class="proj-description__row">
+                <div class="proj-description__wrap">
+                  <h4>작업코드 기술</h4>
+                  <span class="tool-icon">
+                    <img src="./src/img/icon/notion.png" alt="notion" />
+                  </span>
+                  <a
+                    target="_blank"
+                    class="project-demo-link"
+                    href="https://mire-ant-95d.notion.site/Dalgona-Talk-59a19230e3604722b2bab80b5cd6bd0c"
+                    >Notion Link</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section section-page-move">
+          <h2 class="sr-only">프로젝트 페이지 이동</h2>
+          <div class="project-contents-wrap">
+            <div class="page-move-contents">
+              <div class="previous">
+                <p>이전 프로젝트</p>
+                <i class="fa-solid fa-chevron-left"></i>
+                <a class="project-page-name" href="work-caramel.html"
+                  >Caramel Cinema</a
+                >
+              </div>
+              <div class="next">
+                <p>다음 프로젝트</p>
+                <a class="project-page-name" href="work-happy-bakery.html"
+                  >Happy Bakery</a
+                >
+                <i class="fa-solid fa-chevron-right"></i>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="section footer">
+        <div class="project-contents-wrap">
+          <small>&copy; Seungyeon Portfolio 2022</small>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Script -->
+    <script src="./src/js/nav.js"></script>
+    <script src="./src/js/copy.js"></script>
+  </body>
+</html>
